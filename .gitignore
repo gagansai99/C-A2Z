@@ -1,0 +1,19 @@
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Windows executables
+*.exe
+
+# Ignore Linux/Mac executables (no extension)
+a.out
+*.out
+
+# Ignore object files
+*.o
+*.obj
+
+# Ignore debug/build folders
+/build/
+/bin/
+/Debug/
+/Release/
