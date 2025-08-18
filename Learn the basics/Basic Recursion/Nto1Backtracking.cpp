@@ -8,4 +8,4 @@ void NToOne(int start,int n){
 }
 int main(){
     NToOne(1,5);
-}
+} 
