@@ -8,22 +8,20 @@ public:
         unordered_map<int,int> m;
         vector<int> v;
 
-        // find repeating
         for(int i=0;i<n;i++){
             m[arr[i]]++;
             if(m[arr[i]]==2){
-                v.push_back(arr[i]); // repeating
+                v.push_back(arr[i]); 
             }
         }
 
-        // find missing
         for(int j=1;j<=n;j++){
             if(m.find(j)==m.end()){
-                v.push_back(j); // missing
+                v.push_back(j); 
                 break;
             }
         }
-        return v; // [repeating, missing]
+        return v; 
     }
 };
 

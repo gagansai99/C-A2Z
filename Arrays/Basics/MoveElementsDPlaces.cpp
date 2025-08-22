@@ -8,21 +8,19 @@ public:
         int n = nums.size();
         if (n == 0) return;  
 
-        k = k % n;  // handle k > n
+        k = k % n; 
 
         vector<int> v;
-        v.reserve(n); // reserve space for efficiency
+        v.reserve(n); 
 
-        // Step 1: take last k elements
         for (int i = n - k; i < n; i++) {
             v.push_back(nums[i]);
         }
-        // Step 2: take first n-k elements
         for (int i = 0; i < n - k; i++) {
             v.push_back(nums[i]);
         }
 
-        nums = v; // copy back
+        nums = v;
     }
 };
 

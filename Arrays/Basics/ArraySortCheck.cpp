@@ -33,10 +33,10 @@ int main() {
     vector<int> nums2 = {2, 1, 3, 4};
     vector<int> nums3 = {1, 2, 3};
 
-    cout << boolalpha; // prints "true/false" instead of "1/0"
-    cout << "Case 1: " << sol.check(nums1) << endl; // true
-    cout << "Case 2: " << sol.check(nums2) << endl; // false
-    cout << "Case 3: " << sol.check(nums3) << endl; // true
+    cout << boolalpha; 
+    cout << "Case 1: " << sol.check(nums1) << endl; 
+    cout << "Case 2: " << sol.check(nums2) << endl; 
+    cout << "Case 3: " << sol.check(nums3) << endl; 
 
     return 0;
 }

@@ -8,11 +8,11 @@ public:
         if(nums.size() == 1) return 1;
 
         int maxi = 1, c = 1;
-        sort(nums.begin(), nums.end()); // no need for stable_sort
+        sort(nums.begin(), nums.end()); 
 
         for(int i = 1; i < nums.size(); i++) {
             if(nums[i] == nums[i-1]) {
-                continue; // skip duplicates
+                continue;
             }
             if(nums[i] - nums[i-1] == 1) {
                 c++;
@@ -28,7 +28,6 @@ public:
 int main() {
     Solution sol;
 
-    // Example input
     vector<int> nums = {100, 4, 200, 1, 3, 2};
 
     int result = sol.longestConsecutive(nums);

@@ -6,7 +6,7 @@ public:
     vector<int> leaders(vector<int>& arr) {
         vector<int> v;
         int n = arr.size();
-        v.push_back(arr[n-1]);  // last element is always a leader
+        v.push_back(arr[n-1]);  
         
         for (int i = n-2; i >= 0; i--) {
             if (arr[i] >= v.back()) {
@@ -14,7 +14,7 @@ public:
             }
         }
         
-        reverse(v.begin(), v.end());  // restore left-to-right order
+        reverse(v.begin(), v.end());  
         return v;
     }
 };

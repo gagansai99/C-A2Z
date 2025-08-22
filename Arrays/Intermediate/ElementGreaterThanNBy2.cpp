@@ -13,7 +13,7 @@ public:
                 return nums[i];
             }
         }
-        return 0; // problem guarantees a majority element exists, so this won't happen
+        return 0;
     }
 };
 
@@ -21,10 +21,10 @@ int main() {
     Solution sol;
 
     vector<int> nums1 = {3, 2, 3};
-    cout << "Majority Element: " << sol.majorityElement(nums1) << endl; // Expected: 3
+    cout << "Majority Element: " << sol.majorityElement(nums1) << endl; 
 
     vector<int> nums2 = {2, 2, 1, 1, 1, 2, 2};
-    cout << "Majority Element: " << sol.majorityElement(nums2) << endl; // Expected: 2
+    cout << "Majority Element: " << sol.majorityElement(nums2) << endl;
 
     return 0;
 }

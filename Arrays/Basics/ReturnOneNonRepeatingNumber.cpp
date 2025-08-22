@@ -15,7 +15,7 @@ public:
                 return i.first;
             }
         }
-        return 0; // should never hit here if input is valid
+        return 0; 
     }
 };
 

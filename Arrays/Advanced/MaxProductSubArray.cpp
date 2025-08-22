@@ -29,13 +29,13 @@ int main() {
     Solution sol;
 
     vector<int> nums1 = {2, 3, -2, 4};
-    cout << "Max Product: " << sol.maxProduct(nums1) << endl; // Expected: 6
+    cout << "Max Product: " << sol.maxProduct(nums1) << endl; 
 
     vector<int> nums2 = {-2, 0, -1};
-    cout << "Max Product: " << sol.maxProduct(nums2) << endl; // Expected: 0
+    cout << "Max Product: " << sol.maxProduct(nums2) << endl; 
 
     vector<int> nums3 = {-2, 3, -4};
-    cout << "Max Product: " << sol.maxProduct(nums3) << endl; // Expected: 24
+    cout << "Max Product: " << sol.maxProduct(nums3) << endl; 
 
     return 0;
 }

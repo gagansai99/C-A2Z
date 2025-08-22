@@ -16,7 +16,7 @@ public:
             else if (nums[m] == 1) {
                 m++;
             }
-            else { // nums[m] == 2
+            else { 
                 swap(nums[m], nums[r]);
                 r--;
             }

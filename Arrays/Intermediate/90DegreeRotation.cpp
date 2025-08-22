@@ -4,7 +4,6 @@ using namespace std;
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
-        // Transpose the matrix
         for(int i = 0; i < matrix.size(); i++){
             for(int j = 0; j < matrix[i].size(); j++){
                 if(j > i){
@@ -13,7 +12,6 @@ public:
             }
         }
 
-        // Reverse each row
         for(int i = 0; i < matrix.size(); i++){
             int lb = 0, ub = matrix[i].size() - 1;
             while(lb <= ub){

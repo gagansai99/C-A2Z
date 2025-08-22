@@ -22,13 +22,13 @@ int main() {
     Solution sol;
 
     vector<int> nums1 = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    cout << "Max Subarray Sum: " << sol.maxSubArray(nums1) << endl; // Expected: 6 (subarray [4,-1,2,1])
+    cout << "Max Subarray Sum: " << sol.maxSubArray(nums1) << endl; 
 
     vector<int> nums2 = {1};
-    cout << "Max Subarray Sum: " << sol.maxSubArray(nums2) << endl; // Expected: 1
+    cout << "Max Subarray Sum: " << sol.maxSubArray(nums2) << endl; 
 
     vector<int> nums3 = {5, 4, -1, 7, 8};
-    cout << "Max Subarray Sum: " << sol.maxSubArray(nums3) << endl; // Expected: 23
+    cout << "Max Subarray Sum: " << sol.maxSubArray(nums3) << endl; 
 
     return 0;
 }

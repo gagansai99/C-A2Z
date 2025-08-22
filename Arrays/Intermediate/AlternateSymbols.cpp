@@ -8,13 +8,11 @@ public:
         int i = 0, j = 0;
 
         while (i < n) {
-            // case 1: correct sign at i
             if ((i % 2 == 0 && nums[i] > 0) || (i % 2 != 0 && nums[i] < 0)) {
                 i++;
             } 
             else {
-                // case 2: wrong sign at i, find correct candidate at j
-                j = max(j, i + 1); // ensure j always ahead of i
+                j = max(j, i + 1); 
                 while (j < n) {
                     if ((i % 2 == 0 && nums[j] > 0) || (i % 2 != 0 && nums[j] < 0)) {
                         swap(nums[i], nums[j]);
@@ -40,7 +38,6 @@ int main() {
     for (int x : result) cout << x << " ";
     cout << endl;
 
-    // Expected output for verification
     cout << "Expected: [28,-41,22,-8,46,-37,35,-9,18,-6,19,-26,15,-37,14,-10,31,-9]" << endl;
 
     return 0;

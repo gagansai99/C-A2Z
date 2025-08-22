@@ -6,7 +6,7 @@ public:
     int search(vector<int>& nums, int target) {
         int lb = 0, ub = nums.size() - 1;
         while (lb <= ub) {
-            int mid = lb + (ub - lb) / 2; // safer to avoid overflow
+            int mid = lb + (ub - lb) / 2; 
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] > target) {

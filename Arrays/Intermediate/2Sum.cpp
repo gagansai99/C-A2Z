@@ -8,12 +8,10 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int,int> m;
         
-        // store value -> index
         for (int i = 0; i < nums.size(); i++) {
             m[nums[i]] = i;
         }
 
-        // check complements
         for (int i = 0; i < nums.size(); i++) {
             int complement = target - nums[i];
             if (m.find(complement) != m.end() && m[complement] != i) {
@@ -21,7 +19,7 @@ public:
             }
         }
 
-        return {}; // should never hit if input is valid
+        return {}; 
     }
 };
 
